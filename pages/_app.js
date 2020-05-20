@@ -8,9 +8,12 @@
 // 	Themes
 // import React, { useState, useEffect } from 'react'
 import { ThemeProvider } from 'emotion-theming'
+import {lightTheme, darkTheme } from 'theme/theme.js'
 // import styled from '@emotion/styled'
-// import {lightTheme, darkTheme } from 'theme/theme.js'
 // import useDarkMode from 'use-dark-mode'
+
+// 	Global CSS
+import { Global, css } from '@emotion/core'
 
 // 	Slidershow
 // import 'react-awesome-slider/dist/styles.css'
@@ -106,6 +109,7 @@ function MyApp({ Component, pageProps}) {
 	// <Button onClick={darkMode.disable}>LIGHT</Button>
 
 
+	const theme = lightTheme
 
 	return (
         <>

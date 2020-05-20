@@ -16,3 +16,16 @@ export default function Home() {
 	  </>
   )
 }
+
+export async function getServerSideProps () {
+	const {API_URL} = process.env
+	const res = await fetch(`${API_URL}/<++>`)
+	const data = await res.json()
+
+	return {
+		props: {
+			<++>: data
+		}
+
+	}
+};

@@ -1,6 +1,6 @@
-const mq = [`@media (min-width: 1px)`, `@media (min-width: 50px)`, `@media (min-width: 700px)`]
+const mq = [`@media (min-width: 1px)`, `@media (min-width: 50px)`, `@media (min-width: 700px)`];
 
-export light {
+const light = {
 	colors: {
 		c_gray1: '#525564',
 		c_gray2: '#74828F',
@@ -10,9 +10,9 @@ export light {
 		c_red: '#C25B56',
 		c_ping: '#FEF6EB',
 	},
-}
+};
 
-export dark {
+const dark = {
 	colors: {
 		c_gray1: '#525564',
 		c_gray2: '#74828F',
@@ -22,9 +22,9 @@ export dark {
 		c_red: '#C25B56',
 		c_ping: '#FEF6EB',
 	},
-}
+};
 
-export default {
+const defaults = {
 	breakpoints: [
 		'50px', '700px'
 	],
@@ -89,7 +89,7 @@ export default {
 			},
 		},
 	},
-}
+};
 
 
 
