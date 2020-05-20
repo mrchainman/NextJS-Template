@@ -1,19 +1,35 @@
-const mq = [`@media (min-width: 0px)`, `@media (min-width: 900px)`, `@media (min-width: 1200px)`]
+const mq = [`@media (min-width: 1px)`, `@media (min-width: 50px)`, `@media (min-width: 700px)`]
+
+export light {
+	colors: {
+		c_gray1: '#525564',
+		c_gray2: '#74828F',
+		c_gray3: '#BEB9B5',
+		c_blue: '#96C0CE',
+
+		c_red: '#C25B56',
+		c_ping: '#FEF6EB',
+	},
+}
+
+export dark {
+	colors: {
+		c_gray1: '#525564',
+		c_gray2: '#74828F',
+		c_gray3: '#BEB9B5',
+		c_blue: '#96C0CE',
+
+		c_red: '#C25B56',
+		c_ping: '#FEF6EB',
+	},
+}
+
 export default {
 	breakpoints: [
-		'900px', '1200px'
+		'50px', '700px'
 	],
 
 
-	colors:{
-	   c_gray1: '#525564',
-	   c_gray2: '#74828F',
-	   c_gray3: '#BEB9B5',
-	   c_blue: '#96C0CE',
-
-	   c_red: '#C25B56',
-	   c_ping: '#FEF6EB',
-	},
 
 	fontSizes: {
 		small: '10px',
@@ -26,8 +42,7 @@ export default {
 
 
 	variants: {
-
-		v1: {
+		head: {
 			borderWidth: '5px',
 			borderStyle: 'solid',
 			padding: '10px',
@@ -38,43 +53,45 @@ export default {
 			'&:hover': {
 				opacity: '0.5'
 			},
-
 		},
 
-		v2: {
+		block: {
 			borderWidth: '5px',
 			borderStyle: 'solid',
 			padding: '10px',
 
-			mt: '20px',
+			marginTop: '20px',
 			borderRadius: '15px',
 			'&:hover': {
 				opacity: '0.5'
 			},
 
-			[mq[0]]: {
-				width: '100%',
-				mx: '40px',
-			},
-
 			[mq[1]]: {
 				width: '100%',
-				mx: '40px',
 			},
 			[mq[2]]: {
 				width: '45%',
 				ml: '2.5%',
 				mr: '2.5%'
 			},
-
-
-
 		},
 
+		pic: {
+			[mq[1]]: {
+				width: '95%',
+				mx: '2.5%',
+				my: '2.5%',
+			},
+			[mq[2]]: {
+				width: '45%',
+				mx: '2.5%',
 
-
-
-
+			},
+		},
 	},
-
 }
+
+
+
+export const darkTheme = { ...defaults, ...dark }
+export const lightTheme = { ...defaults, ...light }
