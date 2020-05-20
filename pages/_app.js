@@ -1,6 +1,27 @@
+// 	Components
+//import Header from 'components/Header'
+//import Navbar from 'components/Navbar'
+
+// 	Reflexbox
+//import { Flex, Box } from 'reflexbox'
+
+// 	Themes
+// import React, { useState, useEffect } from 'react'
 import { ThemeProvider } from 'emotion-theming'
-import theme from '../theme/theme.js'
-import { Global, css } from '@emotion/core'
+// import styled from '@emotion/styled'
+// import {lightTheme, darkTheme } from 'theme/theme.js'
+// import useDarkMode from 'use-dark-mode'
+
+// 	Slidershow
+// import 'react-awesome-slider/dist/styles.css'
+// import 'react-awesome-slider/dist/custom-animations/cube-animation.css'
+// import 'react-awesome-slider/dist/custom-animations/fall-animation.css'
+// import 'react-awesome-slider/dist/custom-animations/fold-out-animation.css'
+// import 'react-awesome-slider/dist/custom-animations/open-animation.css'
+// import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css'
+
+// 	Menu
+// import { slide as Menu } from "react-burger-menu";
 
 
 const GlobalStyles = () => (
