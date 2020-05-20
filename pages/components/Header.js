@@ -8,7 +8,6 @@ const Header = () => {
 
     return (
 		<Top>
-			SOKOMB
 		</Top>
     )
 }

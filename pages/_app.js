@@ -93,6 +93,17 @@ const GlobalStyles = () => (
 
 function MyApp({ Component, pageProps}) {
 
+	// For use with dark mode theme
+
+	// const [isMounted, setIsMounted] = useState(true)
+	// const darkMode = useDarkMode(true)
+	// const theme = darkMode.value ? darkTheme : lightTheme
+	// useEffect(() => {
+	// 	setIsMounted(true)
+	// }, [])
+	// Add these Buttons somewhere
+	// <Button onClick={darkMode.enable}>DARK</Button>
+	// <Button onClick={darkMode.disable}>LIGHT</Button>
 
 
 
