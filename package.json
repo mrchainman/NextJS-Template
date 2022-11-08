@@ -13,7 +13,7 @@
     "@rebass/preset": "^4.0.5",
     "dotenv": "^8.2.0",
     "emotion-theming": "^10.0.27",
-    "next": "9.4.1",
+    "next": "13.0.2",
     "react": "16.13.1",
     "react-awesome-slider": "^4.1.0",
     "react-burger-menu": "^2.9.0",
